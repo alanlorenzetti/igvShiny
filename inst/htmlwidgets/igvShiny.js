@@ -189,6 +189,32 @@ function genomeSpecificOptions(genomeName, initialLocus, displayMode, trackHeigh
             },
             ]
           }; // rhos_options
+	
+   var hsal_options = {
+         locus: initialLocus,
+         flanking: 2000,
+	 showKaryo: false,
+         showNavigation: true,
+         minimumBases: 5,
+         showRuler: true,
+         reference: {id: "Halobacterium salinarum NRC-1",
+                     fastaURL: "https://github.com/alanlorenzetti/halo_nr_tx/blob/master/data/Hsalinarum.fa",
+                     indexURL: "https://github.com/alanlorenzetti/halo_nr_tx/blob/master/data/Hsalinarum.fa.fai"
+                },
+         tracks: [
+           {name: 'Pfeiffer et. al (2019) Annotation',
+            type: 'annotation',
+            visibilityWindow: 500000,
+            url: "https://github.com/alanlorenzetti/halo_nr_tx/blob/master/data/Hsalinarum.gff",
+            color: "darkred",
+            indexed: true,
+            height: trackHeight,
+            displayMode: displayMode
+            },
+            ]
+          }; // rhos_options
+	
+   
 
    var igvOptions = null;
 
@@ -209,6 +235,10 @@ function genomeSpecificOptions(genomeName, initialLocus, displayMode, trackHeigh
        case "rhos":
          igvOptions = rhos_options;
          break;
+       case "hsal":
+         igvOptions = hsal_options;
+         break;
+       
          } // switch on genomeName
 
     return(igvOptions)
