@@ -212,7 +212,7 @@ function genomeSpecificOptions(genomeName, initialLocus, displayMode, trackHeigh
             displayMode: displayMode
             },
             ]
-          }; // rhos_options
+          }; // hsal_options
 	
    
 
