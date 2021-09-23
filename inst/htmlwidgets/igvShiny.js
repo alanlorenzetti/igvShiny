@@ -198,14 +198,14 @@ function genomeSpecificOptions(genomeName, initialLocus, displayMode, trackHeigh
          minimumBases: 5,
          showRuler: true,
          reference: {id: "Halobacterium salinarum NRC-1",
-                     fastaURL: "https://github.com/alanlorenzetti/halo_nr_tx/blob/master/data/Hsalinarum.fa",
-                     indexURL: "https://github.com/alanlorenzetti/halo_nr_tx/blob/master/data/Hsalinarum.fa.fai"
+                     fastaURL: "https://alanlorenzetti.github.io/halo_nr_tx/data/Hsalinarum.fa",
+                     indexURL: "https://alanlorenzetti.github.io/halo_nr_tx/data/Hsalinarum.fa.fai"
                 },
          tracks: [
            {name: 'Pfeiffer et. al (2019) Annotation',
             type: 'annotation',
             visibilityWindow: 500000,
-            url: "https://github.com/alanlorenzetti/halo_nr_tx/blob/master/data/Hsalinarum.gff",
+            url: "https://alanlorenzetti.github.io/halo_nr_tx/data/Hsalinarum.gff",
             color: "darkred",
             indexed: true,
             height: trackHeight,
